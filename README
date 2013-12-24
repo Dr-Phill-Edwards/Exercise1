@@ -1,1 +1,5 @@
 Java Exercise
+Requires JDK 1.7 and apache ant
+Open a command tool and cd to the project
+Run ant to build
+Execute with java -jar twitter.jar 
