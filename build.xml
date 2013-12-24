@@ -1,0 +1,13 @@
+<project name="Exercise" default="deploy" basedir=".">
+	<description>Twitter Exercise</description>
+	<target name="compile">
+		<javac includeantruntime="false" srcdir="src" destdir="bin"/>
+	</target>
+	<target name="deploy" depends="compile">
+		<jar jarfile="twitter.jar" basedir="bin">
+			<manifest>
+				<attribute name="Main-Class" value="twitter.Twitter"/>
+			</manifest>
+		</jar>
+	</target>
+</project>
